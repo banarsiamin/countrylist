@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.5.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: May 22, 2019 at 09:05 AM
+- Server version: 10.1.21-MariaDB
+- PHP Version: 7.1.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="mycards" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="country">
+                CREATE TABLE `country` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `iso` char(2) NOT NULL,
+                  `name` varchar(80) NOT NULL,
+                  `nicename` varchar(80) NOT NULL,
+                  `iso3` char(3) DEFAULT NULL,
+                  `numcode` smallint(6) DEFAULT NULL,
+                  `phonecode` int(5) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=255 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'mycards'
+    -->
+    <database name="mycards">
+        <!-- Table country -->
+        <table name="country">
+            <column name="id">1</column>
+            <column name="iso">AF</column>
+            <column name="name">AFGHANISTAN</column>
+            <column name="nicename">Afghanistan</column>
+            <column name="iso3">AFG</column>
+            <column name="numcode">4</column>
+            <column name="phonecode">93</column>
+        </table>
+        <table name="country">
+            <column name="id">2</column>
+            <column name="iso">AL</column>
+            <column name="name">ALBANIA</column>
+            <column name="nicename">Albania</column>
+            <column name="iso3">ALB</column>
+            <column name="numcode">8</column>
+            <column name="phonecode">355</column>
+        </table>
+        <table name="country">
+            <column name="id">3</column>
+            <column name="iso">DZ</column>
+            <column name="name">ALGERIA</column>
+            <column name="nicename">Algeria</column>
+            <column name="iso3">DZA</column>
+            <column name="numcode">12</column>
+            <column name="phonecode">213</column>
+        </table>
+        <table name="country">
+            <column name="id">4</column>
+            <column name="iso">AS</column>
+            <column name="name">AMERICAN SAMOA</column>
+            <column name="nicename">American Samoa</column>
+            <column name="iso3">ASM</column>
+            <column name="numcode">16</column>
+            <column name="phonecode">1684</column>
+        </table>
+        <table name="country">
+            <column name="id">5</column>
+            <column name="iso">AD</column>
+            <column name="name">ANDORRA</column>
+            <column name="nicename">Andorra</column>
+            <column name="iso3">AND</column>
+            <column name="numcode">20</column>
+            <column name="phonecode">376</column>
+        </table>
+        <table name="country">
+            <column name="id">6</column>
+            <column name="iso">AO</column>
+            <column name="name">ANGOLA</column>
+            <column name="nicename">Angola</column>
+            <column name="iso3">AGO</column>
+            <column name="numcode">24</column>
+            <column name="phonecode">244</column>
+        </table>
+        <table name="country">
+            <column name="id">7</column>
+            <column name="iso">AI</column>
+            <column name="name">ANGUILLA</column>
+            <column name="nicename">Anguilla</column>
+            <column name="iso3">AIA</column>
+            <column name="numcode">660</column>
+            <column name="phonecode">1264</column>
+        </table>
+        <table name="country">
+            <column name="id">8</column>
+            <column name="iso">AQ</column>
+            <column name="name">ANTARCTICA</column>
+            <column name="nicename">Antarctica</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">9</column>
+            <column name="iso">AG</column>
+            <column name="name">ANTIGUA AND BARBUDA</column>
+            <column name="nicename">Antigua and Barbuda</column>
+            <column name="iso3">ATG</column>
+            <column name="numcode">28</column>
+            <column name="phonecode">1268</column>
+        </table>
+        <table name="country">
+            <column name="id">10</column>
+            <column name="iso">AR</column>
+            <column name="name">ARGENTINA</column>
+            <column name="nicename">Argentina</column>
+            <column name="iso3">ARG</column>
+            <column name="numcode">32</column>
+            <column name="phonecode">54</column>
+        </table>
+        <table name="country">
+            <column name="id">11</column>
+            <column name="iso">AM</column>
+            <column name="name">ARMENIA</column>
+            <column name="nicename">Armenia</column>
+            <column name="iso3">ARM</column>
+            <column name="numcode">51</column>
+            <column name="phonecode">374</column>
+        </table>
+        <table name="country">
+            <column name="id">12</column>
+            <column name="iso">AW</column>
+            <column name="name">ARUBA</column>
+            <column name="nicename">Aruba</column>
+            <column name="iso3">ABW</column>
+            <column name="numcode">533</column>
+            <column name="phonecode">297</column>
+        </table>
+        <table name="country">
+            <column name="id">13</column>
+            <column name="iso">AU</column>
+            <column name="name">AUSTRALIA</column>
+            <column name="nicename">Australia</column>
+            <column name="iso3">AUS</column>
+            <column name="numcode">36</column>
+            <column name="phonecode">61</column>
+        </table>
+        <table name="country">
+            <column name="id">14</column>
+            <column name="iso">AT</column>
+            <column name="name">AUSTRIA</column>
+            <column name="nicename">Austria</column>
+            <column name="iso3">AUT</column>
+            <column name="numcode">40</column>
+            <column name="phonecode">43</column>
+        </table>
+        <table name="country">
+            <column name="id">15</column>
+            <column name="iso">AZ</column>
+            <column name="name">AZERBAIJAN</column>
+            <column name="nicename">Azerbaijan</column>
+            <column name="iso3">AZE</column>
+            <column name="numcode">31</column>
+            <column name="phonecode">994</column>
+        </table>
+        <table name="country">
+            <column name="id">16</column>
+            <column name="iso">BS</column>
+            <column name="name">BAHAMAS</column>
+            <column name="nicename">Bahamas</column>
+            <column name="iso3">BHS</column>
+            <column name="numcode">44</column>
+            <column name="phonecode">1242</column>
+        </table>
+        <table name="country">
+            <column name="id">17</column>
+            <column name="iso">BH</column>
+            <column name="name">BAHRAIN</column>
+            <column name="nicename">Bahrain</column>
+            <column name="iso3">BHR</column>
+            <column name="numcode">48</column>
+            <column name="phonecode">973</column>
+        </table>
+        <table name="country">
+            <column name="id">18</column>
+            <column name="iso">BD</column>
+            <column name="name">BANGLADESH</column>
+            <column name="nicename">Bangladesh</column>
+            <column name="iso3">BGD</column>
+            <column name="numcode">50</column>
+            <column name="phonecode">880</column>
+        </table>
+        <table name="country">
+            <column name="id">19</column>
+            <column name="iso">BB</column>
+            <column name="name">BARBADOS</column>
+            <column name="nicename">Barbados</column>
+            <column name="iso3">BRB</column>
+            <column name="numcode">52</column>
+            <column name="phonecode">1246</column>
+        </table>
+        <table name="country">
+            <column name="id">20</column>
+            <column name="iso">BY</column>
+            <column name="name">BELARUS</column>
+            <column name="nicename">Belarus</column>
+            <column name="iso3">BLR</column>
+            <column name="numcode">112</column>
+            <column name="phonecode">375</column>
+        </table>
+        <table name="country">
+            <column name="id">21</column>
+            <column name="iso">BE</column>
+            <column name="name">BELGIUM</column>
+            <column name="nicename">Belgium</column>
+            <column name="iso3">BEL</column>
+            <column name="numcode">56</column>
+            <column name="phonecode">32</column>
+        </table>
+        <table name="country">
+            <column name="id">22</column>
+            <column name="iso">BZ</column>
+            <column name="name">BELIZE</column>
+            <column name="nicename">Belize</column>
+            <column name="iso3">BLZ</column>
+            <column name="numcode">84</column>
+            <column name="phonecode">501</column>
+        </table>
+        <table name="country">
+            <column name="id">23</column>
+            <column name="iso">BJ</column>
+            <column name="name">BENIN</column>
+            <column name="nicename">Benin</column>
+            <column name="iso3">BEN</column>
+            <column name="numcode">204</column>
+            <column name="phonecode">229</column>
+        </table>
+        <table name="country">
+            <column name="id">24</column>
+            <column name="iso">BM</column>
+            <column name="name">BERMUDA</column>
+            <column name="nicename">Bermuda</column>
+            <column name="iso3">BMU</column>
+            <column name="numcode">60</column>
+            <column name="phonecode">1441</column>
+        </table>
+        <table name="country">
+            <column name="id">25</column>
+            <column name="iso">BT</column>
+            <column name="name">BHUTAN</column>
+            <column name="nicename">Bhutan</column>
+            <column name="iso3">BTN</column>
+            <column name="numcode">64</column>
+            <column name="phonecode">975</column>
+        </table>
+        <table name="country">
+            <column name="id">26</column>
+            <column name="iso">BO</column>
+            <column name="name">BOLIVIA</column>
+            <column name="nicename">Bolivia</column>
+            <column name="iso3">BOL</column>
+            <column name="numcode">68</column>
+            <column name="phonecode">591</column>
+        </table>
+        <table name="country">
+            <column name="id">27</column>
+            <column name="iso">BA</column>
+            <column name="name">BOSNIA AND HERZEGOVINA</column>
+            <column name="nicename">Bosnia and Herzegovina</column>
+            <column name="iso3">BIH</column>
+            <column name="numcode">70</column>
+            <column name="phonecode">387</column>
+        </table>
+        <table name="country">
+            <column name="id">28</column>
+            <column name="iso">BW</column>
+            <column name="name">BOTSWANA</column>
+            <column name="nicename">Botswana</column>
+            <column name="iso3">BWA</column>
+            <column name="numcode">72</column>
+            <column name="phonecode">267</column>
+        </table>
+        <table name="country">
+            <column name="id">29</column>
+            <column name="iso">BV</column>
+            <column name="name">BOUVET ISLAND</column>
+            <column name="nicename">Bouvet Island</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">30</column>
+            <column name="iso">BR</column>
+            <column name="name">BRAZIL</column>
+            <column name="nicename">Brazil</column>
+            <column name="iso3">BRA</column>
+            <column name="numcode">76</column>
+            <column name="phonecode">55</column>
+        </table>
+        <table name="country">
+            <column name="id">31</column>
+            <column name="iso">IO</column>
+            <column name="name">BRITISH INDIAN OCEAN TERRITORY</column>
+            <column name="nicename">British Indian Ocean Territory</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">246</column>
+        </table>
+        <table name="country">
+            <column name="id">32</column>
+            <column name="iso">BN</column>
+            <column name="name">BRUNEI DARUSSALAM</column>
+            <column name="nicename">Brunei Darussalam</column>
+            <column name="iso3">BRN</column>
+            <column name="numcode">96</column>
+            <column name="phonecode">673</column>
+        </table>
+        <table name="country">
+            <column name="id">33</column>
+            <column name="iso">BG</column>
+            <column name="name">BULGARIA</column>
+            <column name="nicename">Bulgaria</column>
+            <column name="iso3">BGR</column>
+            <column name="numcode">100</column>
+            <column name="phonecode">359</column>
+        </table>
+        <table name="country">
+            <column name="id">34</column>
+            <column name="iso">BF</column>
+            <column name="name">BURKINA FASO</column>
+            <column name="nicename">Burkina Faso</column>
+            <column name="iso3">BFA</column>
+            <column name="numcode">854</column>
+            <column name="phonecode">226</column>
+        </table>
+        <table name="country">
+            <column name="id">35</column>
+            <column name="iso">BI</column>
+            <column name="name">BURUNDI</column>
+            <column name="nicename">Burundi</column>
+            <column name="iso3">BDI</column>
+            <column name="numcode">108</column>
+            <column name="phonecode">257</column>
+        </table>
+        <table name="country">
+            <column name="id">36</column>
+            <column name="iso">KH</column>
+            <column name="name">CAMBODIA</column>
+            <column name="nicename">Cambodia</column>
+            <column name="iso3">KHM</column>
+            <column name="numcode">116</column>
+            <column name="phonecode">855</column>
+        </table>
+        <table name="country">
+            <column name="id">37</column>
+            <column name="iso">CM</column>
+            <column name="name">CAMEROON</column>
+            <column name="nicename">Cameroon</column>
+            <column name="iso3">CMR</column>
+            <column name="numcode">120</column>
+            <column name="phonecode">237</column>
+        </table>
+        <table name="country">
+            <column name="id">38</column>
+            <column name="iso">CA</column>
+            <column name="name">CANADA</column>
+            <column name="nicename">Canada</column>
+            <column name="iso3">CAN</column>
+            <column name="numcode">124</column>
+            <column name="phonecode">1</column>
+        </table>
+        <table name="country">
+            <column name="id">39</column>
+            <column name="iso">CV</column>
+            <column name="name">CAPE VERDE</column>
+            <column name="nicename">Cape Verde</column>
+            <column name="iso3">CPV</column>
+            <column name="numcode">132</column>
+            <column name="phonecode">238</column>
+        </table>
+        <table name="country">
+            <column name="id">40</column>
+            <column name="iso">KY</column>
+            <column name="name">CAYMAN ISLANDS</column>
+            <column name="nicename">Cayman Islands</column>
+            <column name="iso3">CYM</column>
+            <column name="numcode">136</column>
+            <column name="phonecode">1345</column>
+        </table>
+        <table name="country">
+            <column name="id">41</column>
+            <column name="iso">CF</column>
+            <column name="name">CENTRAL AFRICAN REPUBLIC</column>
+            <column name="nicename">Central African Republic</column>
+            <column name="iso3">CAF</column>
+            <column name="numcode">140</column>
+            <column name="phonecode">236</column>
+        </table>
+        <table name="country">
+            <column name="id">42</column>
+            <column name="iso">TD</column>
+            <column name="name">CHAD</column>
+            <column name="nicename">Chad</column>
+            <column name="iso3">TCD</column>
+            <column name="numcode">148</column>
+            <column name="phonecode">235</column>
+        </table>
+        <table name="country">
+            <column name="id">43</column>
+            <column name="iso">CL</column>
+            <column name="name">CHILE</column>
+            <column name="nicename">Chile</column>
+            <column name="iso3">CHL</column>
+            <column name="numcode">152</column>
+            <column name="phonecode">56</column>
+        </table>
+        <table name="country">
+            <column name="id">44</column>
+            <column name="iso">CN</column>
+            <column name="name">CHINA</column>
+            <column name="nicename">China</column>
+            <column name="iso3">CHN</column>
+            <column name="numcode">156</column>
+            <column name="phonecode">86</column>
+        </table>
+        <table name="country">
+            <column name="id">45</column>
+            <column name="iso">CX</column>
+            <column name="name">CHRISTMAS ISLAND</column>
+            <column name="nicename">Christmas Island</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">61</column>
+        </table>
+        <table name="country">
+            <column name="id">46</column>
+            <column name="iso">CC</column>
+            <column name="name">COCOS (KEELING) ISLANDS</column>
+            <column name="nicename">Cocos (Keeling) Islands</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">672</column>
+        </table>
+        <table name="country">
+            <column name="id">47</column>
+            <column name="iso">CO</column>
+            <column name="name">COLOMBIA</column>
+            <column name="nicename">Colombia</column>
+            <column name="iso3">COL</column>
+            <column name="numcode">170</column>
+            <column name="phonecode">57</column>
+        </table>
+        <table name="country">
+            <column name="id">48</column>
+            <column name="iso">KM</column>
+            <column name="name">COMOROS</column>
+            <column name="nicename">Comoros</column>
+            <column name="iso3">COM</column>
+            <column name="numcode">174</column>
+            <column name="phonecode">269</column>
+        </table>
+        <table name="country">
+            <column name="id">49</column>
+            <column name="iso">CG</column>
+            <column name="name">CONGO</column>
+            <column name="nicename">Congo</column>
+            <column name="iso3">COG</column>
+            <column name="numcode">178</column>
+            <column name="phonecode">242</column>
+        </table>
+        <table name="country">
+            <column name="id">50</column>
+            <column name="iso">CD</column>
+            <column name="name">CONGO, THE DEMOCRATIC REPUBLIC OF THE</column>
+            <column name="nicename">Congo, the Democratic Republic of the</column>
+            <column name="iso3">COD</column>
+            <column name="numcode">180</column>
+            <column name="phonecode">242</column>
+        </table>
+        <table name="country">
+            <column name="id">51</column>
+            <column name="iso">CK</column>
+            <column name="name">COOK ISLANDS</column>
+            <column name="nicename">Cook Islands</column>
+            <column name="iso3">COK</column>
+            <column name="numcode">184</column>
+            <column name="phonecode">682</column>
+        </table>
+        <table name="country">
+            <column name="id">52</column>
+            <column name="iso">CR</column>
+            <column name="name">COSTA RICA</column>
+            <column name="nicename">Costa Rica</column>
+            <column name="iso3">CRI</column>
+            <column name="numcode">188</column>
+            <column name="phonecode">506</column>
+        </table>
+        <table name="country">
+            <column name="id">53</column>
+            <column name="iso">CI</column>
+            <column name="name">COTE D'IVOIRE</column>
+            <column name="nicename">Cote D'Ivoire</column>
+            <column name="iso3">CIV</column>
+            <column name="numcode">384</column>
+            <column name="phonecode">225</column>
+        </table>
+        <table name="country">
+            <column name="id">54</column>
+            <column name="iso">HR</column>
+            <column name="name">CROATIA</column>
+            <column name="nicename">Croatia</column>
+            <column name="iso3">HRV</column>
+            <column name="numcode">191</column>
+            <column name="phonecode">385</column>
+        </table>
+        <table name="country">
+            <column name="id">55</column>
+            <column name="iso">CU</column>
+            <column name="name">CUBA</column>
+            <column name="nicename">Cuba</column>
+            <column name="iso3">CUB</column>
+            <column name="numcode">192</column>
+            <column name="phonecode">53</column>
+        </table>
+        <table name="country">
+            <column name="id">56</column>
+            <column name="iso">CY</column>
+            <column name="name">CYPRUS</column>
+            <column name="nicename">Cyprus</column>
+            <column name="iso3">CYP</column>
+            <column name="numcode">196</column>
+            <column name="phonecode">357</column>
+        </table>
+        <table name="country">
+            <column name="id">57</column>
+            <column name="iso">CZ</column>
+            <column name="name">CZECH REPUBLIC</column>
+            <column name="nicename">Czech Republic</column>
+            <column name="iso3">CZE</column>
+            <column name="numcode">203</column>
+            <column name="phonecode">420</column>
+        </table>
+        <table name="country">
+            <column name="id">58</column>
+            <column name="iso">DK</column>
+            <column name="name">DENMARK</column>
+            <column name="nicename">Denmark</column>
+            <column name="iso3">DNK</column>
+            <column name="numcode">208</column>
+            <column name="phonecode">45</column>
+        </table>
+        <table name="country">
+            <column name="id">59</column>
+            <column name="iso">DJ</column>
+            <column name="name">DJIBOUTI</column>
+            <column name="nicename">Djibouti</column>
+            <column name="iso3">DJI</column>
+            <column name="numcode">262</column>
+            <column name="phonecode">253</column>
+        </table>
+        <table name="country">
+            <column name="id">60</column>
+            <column name="iso">DM</column>
+            <column name="name">DOMINICA</column>
+            <column name="nicename">Dominica</column>
+            <column name="iso3">DMA</column>
+            <column name="numcode">212</column>
+            <column name="phonecode">1767</column>
+        </table>
+        <table name="country">
+            <column name="id">61</column>
+            <column name="iso">DO</column>
+            <column name="name">DOMINICAN REPUBLIC</column>
+            <column name="nicename">Dominican Republic</column>
+            <column name="iso3">DOM</column>
+            <column name="numcode">214</column>
+            <column name="phonecode">1809</column>
+        </table>
+        <table name="country">
+            <column name="id">62</column>
+            <column name="iso">EC</column>
+            <column name="name">ECUADOR</column>
+            <column name="nicename">Ecuador</column>
+            <column name="iso3">ECU</column>
+            <column name="numcode">218</column>
+            <column name="phonecode">593</column>
+        </table>
+        <table name="country">
+            <column name="id">63</column>
+            <column name="iso">EG</column>
+            <column name="name">EGYPT</column>
+            <column name="nicename">Egypt</column>
+            <column name="iso3">EGY</column>
+            <column name="numcode">818</column>
+            <column name="phonecode">20</column>
+        </table>
+        <table name="country">
+            <column name="id">64</column>
+            <column name="iso">SV</column>
+            <column name="name">EL SALVADOR</column>
+            <column name="nicename">El Salvador</column>
+            <column name="iso3">SLV</column>
+            <column name="numcode">222</column>
+            <column name="phonecode">503</column>
+        </table>
+        <table name="country">
+            <column name="id">65</column>
+            <column name="iso">GQ</column>
+            <column name="name">EQUATORIAL GUINEA</column>
+            <column name="nicename">Equatorial Guinea</column>
+            <column name="iso3">GNQ</column>
+            <column name="numcode">226</column>
+            <column name="phonecode">240</column>
+        </table>
+        <table name="country">
+            <column name="id">66</column>
+            <column name="iso">ER</column>
+            <column name="name">ERITREA</column>
+            <column name="nicename">Eritrea</column>
+            <column name="iso3">ERI</column>
+            <column name="numcode">232</column>
+            <column name="phonecode">291</column>
+        </table>
+        <table name="country">
+            <column name="id">67</column>
+            <column name="iso">EE</column>
+            <column name="name">ESTONIA</column>
+            <column name="nicename">Estonia</column>
+            <column name="iso3">EST</column>
+            <column name="numcode">233</column>
+            <column name="phonecode">372</column>
+        </table>
+        <table name="country">
+            <column name="id">68</column>
+            <column name="iso">ET</column>
+            <column name="name">ETHIOPIA</column>
+            <column name="nicename">Ethiopia</column>
+            <column name="iso3">ETH</column>
+            <column name="numcode">231</column>
+            <column name="phonecode">251</column>
+        </table>
+        <table name="country">
+            <column name="id">69</column>
+            <column name="iso">FK</column>
+            <column name="name">FALKLAND ISLANDS (MALVINAS)</column>
+            <column name="nicename">Falkland Islands (Malvinas)</column>
+            <column name="iso3">FLK</column>
+            <column name="numcode">238</column>
+            <column name="phonecode">500</column>
+        </table>
+        <table name="country">
+            <column name="id">70</column>
+            <column name="iso">FO</column>
+            <column name="name">FAROE ISLANDS</column>
+            <column name="nicename">Faroe Islands</column>
+            <column name="iso3">FRO</column>
+            <column name="numcode">234</column>
+            <column name="phonecode">298</column>
+        </table>
+        <table name="country">
+            <column name="id">71</column>
+            <column name="iso">FJ</column>
+            <column name="name">FIJI</column>
+            <column name="nicename">Fiji</column>
+            <column name="iso3">FJI</column>
+            <column name="numcode">242</column>
+            <column name="phonecode">679</column>
+        </table>
+        <table name="country">
+            <column name="id">72</column>
+            <column name="iso">FI</column>
+            <column name="name">FINLAND</column>
+            <column name="nicename">Finland</column>
+            <column name="iso3">FIN</column>
+            <column name="numcode">246</column>
+            <column name="phonecode">358</column>
+        </table>
+        <table name="country">
+            <column name="id">73</column>
+            <column name="iso">FR</column>
+            <column name="name">FRANCE</column>
+            <column name="nicename">France</column>
+            <column name="iso3">FRA</column>
+            <column name="numcode">250</column>
+            <column name="phonecode">33</column>
+        </table>
+        <table name="country">
+            <column name="id">74</column>
+            <column name="iso">GF</column>
+            <column name="name">FRENCH GUIANA</column>
+            <column name="nicename">French Guiana</column>
+            <column name="iso3">GUF</column>
+            <column name="numcode">254</column>
+            <column name="phonecode">594</column>
+        </table>
+        <table name="country">
+            <column name="id">75</column>
+            <column name="iso">PF</column>
+            <column name="name">FRENCH POLYNESIA</column>
+            <column name="nicename">French Polynesia</column>
+            <column name="iso3">PYF</column>
+            <column name="numcode">258</column>
+            <column name="phonecode">689</column>
+        </table>
+        <table name="country">
+            <column name="id">76</column>
+            <column name="iso">TF</column>
+            <column name="name">FRENCH SOUTHERN TERRITORIES</column>
+            <column name="nicename">French Southern Territories</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">77</column>
+            <column name="iso">GA</column>
+            <column name="name">GABON</column>
+            <column name="nicename">Gabon</column>
+            <column name="iso3">GAB</column>
+            <column name="numcode">266</column>
+            <column name="phonecode">241</column>
+        </table>
+        <table name="country">
+            <column name="id">78</column>
+            <column name="iso">GM</column>
+            <column name="name">GAMBIA</column>
+            <column name="nicename">Gambia</column>
+            <column name="iso3">GMB</column>
+            <column name="numcode">270</column>
+            <column name="phonecode">220</column>
+        </table>
+        <table name="country">
+            <column name="id">79</column>
+            <column name="iso">GE</column>
+            <column name="name">GEORGIA</column>
+            <column name="nicename">Georgia</column>
+            <column name="iso3">GEO</column>
+            <column name="numcode">268</column>
+            <column name="phonecode">995</column>
+        </table>
+        <table name="country">
+            <column name="id">80</column>
+            <column name="iso">DE</column>
+            <column name="name">GERMANY</column>
+            <column name="nicename">Germany</column>
+            <column name="iso3">DEU</column>
+            <column name="numcode">276</column>
+            <column name="phonecode">49</column>
+        </table>
+        <table name="country">
+            <column name="id">81</column>
+            <column name="iso">GH</column>
+            <column name="name">GHANA</column>
+            <column name="nicename">Ghana</column>
+            <column name="iso3">GHA</column>
+            <column name="numcode">288</column>
+            <column name="phonecode">233</column>
+        </table>
+        <table name="country">
+            <column name="id">82</column>
+            <column name="iso">GI</column>
+            <column name="name">GIBRALTAR</column>
+            <column name="nicename">Gibraltar</column>
+            <column name="iso3">GIB</column>
+            <column name="numcode">292</column>
+            <column name="phonecode">350</column>
+        </table>
+        <table name="country">
+            <column name="id">83</column>
+            <column name="iso">GR</column>
+            <column name="name">GREECE</column>
+            <column name="nicename">Greece</column>
+            <column name="iso3">GRC</column>
+            <column name="numcode">300</column>
+            <column name="phonecode">30</column>
+        </table>
+        <table name="country">
+            <column name="id">84</column>
+            <column name="iso">GL</column>
+            <column name="name">GREENLAND</column>
+            <column name="nicename">Greenland</column>
+            <column name="iso3">GRL</column>
+            <column name="numcode">304</column>
+            <column name="phonecode">299</column>
+        </table>
+        <table name="country">
+            <column name="id">85</column>
+            <column name="iso">GD</column>
+            <column name="name">GRENADA</column>
+            <column name="nicename">Grenada</column>
+            <column name="iso3">GRD</column>
+            <column name="numcode">308</column>
+            <column name="phonecode">1473</column>
+        </table>
+        <table name="country">
+            <column name="id">86</column>
+            <column name="iso">GP</column>
+            <column name="name">GUADELOUPE</column>
+            <column name="nicename">Guadeloupe</column>
+            <column name="iso3">GLP</column>
+            <column name="numcode">312</column>
+            <column name="phonecode">590</column>
+        </table>
+        <table name="country">
+            <column name="id">87</column>
+            <column name="iso">GU</column>
+            <column name="name">GUAM</column>
+            <column name="nicename">Guam</column>
+            <column name="iso3">GUM</column>
+            <column name="numcode">316</column>
+            <column name="phonecode">1671</column>
+        </table>
+        <table name="country">
+            <column name="id">88</column>
+            <column name="iso">GT</column>
+            <column name="name">GUATEMALA</column>
+            <column name="nicename">Guatemala</column>
+            <column name="iso3">GTM</column>
+            <column name="numcode">320</column>
+            <column name="phonecode">502</column>
+        </table>
+        <table name="country">
+            <column name="id">89</column>
+            <column name="iso">GN</column>
+            <column name="name">GUINEA</column>
+            <column name="nicename">Guinea</column>
+            <column name="iso3">GIN</column>
+            <column name="numcode">324</column>
+            <column name="phonecode">224</column>
+        </table>
+        <table name="country">
+            <column name="id">90</column>
+            <column name="iso">GW</column>
+            <column name="name">GUINEA-BISSAU</column>
+            <column name="nicename">Guinea-Bissau</column>
+            <column name="iso3">GNB</column>
+            <column name="numcode">624</column>
+            <column name="phonecode">245</column>
+        </table>
+        <table name="country">
+            <column name="id">91</column>
+            <column name="iso">GY</column>
+            <column name="name">GUYANA</column>
+            <column name="nicename">Guyana</column>
+            <column name="iso3">GUY</column>
+            <column name="numcode">328</column>
+            <column name="phonecode">592</column>
+        </table>
+        <table name="country">
+            <column name="id">92</column>
+            <column name="iso">HT</column>
+            <column name="name">HAITI</column>
+            <column name="nicename">Haiti</column>
+            <column name="iso3">HTI</column>
+            <column name="numcode">332</column>
+            <column name="phonecode">509</column>
+        </table>
+        <table name="country">
+            <column name="id">93</column>
+            <column name="iso">HM</column>
+            <column name="name">HEARD ISLAND AND MCDONALD ISLANDS</column>
+            <column name="nicename">Heard Island and Mcdonald Islands</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">94</column>
+            <column name="iso">VA</column>
+            <column name="name">HOLY SEE (VATICAN CITY STATE)</column>
+            <column name="nicename">Holy See (Vatican City State)</column>
+            <column name="iso3">VAT</column>
+            <column name="numcode">336</column>
+            <column name="phonecode">39</column>
+        </table>
+        <table name="country">
+            <column name="id">95</column>
+            <column name="iso">HN</column>
+            <column name="name">HONDURAS</column>
+            <column name="nicename">Honduras</column>
+            <column name="iso3">HND</column>
+            <column name="numcode">340</column>
+            <column name="phonecode">504</column>
+        </table>
+        <table name="country">
+            <column name="id">96</column>
+            <column name="iso">HK</column>
+            <column name="name">HONG KONG</column>
+            <column name="nicename">Hong Kong</column>
+            <column name="iso3">HKG</column>
+            <column name="numcode">344</column>
+            <column name="phonecode">852</column>
+        </table>
+        <table name="country">
+            <column name="id">97</column>
+            <column name="iso">HU</column>
+            <column name="name">HUNGARY</column>
+            <column name="nicename">Hungary</column>
+            <column name="iso3">HUN</column>
+            <column name="numcode">348</column>
+            <column name="phonecode">36</column>
+        </table>
+        <table name="country">
+            <column name="id">98</column>
+            <column name="iso">IS</column>
+            <column name="name">ICELAND</column>
+            <column name="nicename">Iceland</column>
+            <column name="iso3">ISL</column>
+            <column name="numcode">352</column>
+            <column name="phonecode">354</column>
+        </table>
+        <table name="country">
+            <column name="id">99</column>
+            <column name="iso">IN</column>
+            <column name="name">INDIA</column>
+            <column name="nicename">India</column>
+            <column name="iso3">IND</column>
+            <column name="numcode">356</column>
+            <column name="phonecode">91</column>
+        </table>
+        <table name="country">
+            <column name="id">100</column>
+            <column name="iso">ID</column>
+            <column name="name">INDONESIA</column>
+            <column name="nicename">Indonesia</column>
+            <column name="iso3">IDN</column>
+            <column name="numcode">360</column>
+            <column name="phonecode">62</column>
+        </table>
+        <table name="country">
+            <column name="id">101</column>
+            <column name="iso">IR</column>
+            <column name="name">IRAN, ISLAMIC REPUBLIC OF</column>
+            <column name="nicename">Iran, Islamic Republic of</column>
+            <column name="iso3">IRN</column>
+            <column name="numcode">364</column>
+            <column name="phonecode">98</column>
+        </table>
+        <table name="country">
+            <column name="id">102</column>
+            <column name="iso">IQ</column>
+            <column name="name">IRAQ</column>
+            <column name="nicename">Iraq</column>
+            <column name="iso3">IRQ</column>
+            <column name="numcode">368</column>
+            <column name="phonecode">964</column>
+        </table>
+        <table name="country">
+            <column name="id">103</column>
+            <column name="iso">IE</column>
+            <column name="name">IRELAND</column>
+            <column name="nicename">Ireland</column>
+            <column name="iso3">IRL</column>
+            <column name="numcode">372</column>
+            <column name="phonecode">353</column>
+        </table>
+        <table name="country">
+            <column name="id">104</column>
+            <column name="iso">IL</column>
+            <column name="name">ISRAEL</column>
+            <column name="nicename">Israel</column>
+            <column name="iso3">ISR</column>
+            <column name="numcode">376</column>
+            <column name="phonecode">972</column>
+        </table>
+        <table name="country">
+            <column name="id">105</column>
+            <column name="iso">IT</column>
+            <column name="name">ITALY</column>
+            <column name="nicename">Italy</column>
+            <column name="iso3">ITA</column>
+            <column name="numcode">380</column>
+            <column name="phonecode">39</column>
+        </table>
+        <table name="country">
+            <column name="id">106</column>
+            <column name="iso">JM</column>
+            <column name="name">JAMAICA</column>
+            <column name="nicename">Jamaica</column>
+            <column name="iso3">JAM</column>
+            <column name="numcode">388</column>
+            <column name="phonecode">1876</column>
+        </table>
+        <table name="country">
+            <column name="id">107</column>
+            <column name="iso">JP</column>
+            <column name="name">JAPAN</column>
+            <column name="nicename">Japan</column>
+            <column name="iso3">JPN</column>
+            <column name="numcode">392</column>
+            <column name="phonecode">81</column>
+        </table>
+        <table name="country">
+            <column name="id">108</column>
+            <column name="iso">JO</column>
+            <column name="name">JORDAN</column>
+            <column name="nicename">Jordan</column>
+            <column name="iso3">JOR</column>
+            <column name="numcode">400</column>
+            <column name="phonecode">962</column>
+        </table>
+        <table name="country">
+            <column name="id">109</column>
+            <column name="iso">KZ</column>
+            <column name="name">KAZAKHSTAN</column>
+            <column name="nicename">Kazakhstan</column>
+            <column name="iso3">KAZ</column>
+            <column name="numcode">398</column>
+            <column name="phonecode">7</column>
+        </table>
+        <table name="country">
+            <column name="id">110</column>
+            <column name="iso">KE</column>
+            <column name="name">KENYA</column>
+            <column name="nicename">Kenya</column>
+            <column name="iso3">KEN</column>
+            <column name="numcode">404</column>
+            <column name="phonecode">254</column>
+        </table>
+        <table name="country">
+            <column name="id">111</column>
+            <column name="iso">KI</column>
+            <column name="name">KIRIBATI</column>
+            <column name="nicename">Kiribati</column>
+            <column name="iso3">KIR</column>
+            <column name="numcode">296</column>
+            <column name="phonecode">686</column>
+        </table>
+        <table name="country">
+            <column name="id">112</column>
+            <column name="iso">KP</column>
+            <column name="name">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</column>
+            <column name="nicename">Korea, Democratic People's Republic of</column>
+            <column name="iso3">PRK</column>
+            <column name="numcode">408</column>
+            <column name="phonecode">850</column>
+        </table>
+        <table name="country">
+            <column name="id">113</column>
+            <column name="iso">KR</column>
+            <column name="name">KOREA, REPUBLIC OF</column>
+            <column name="nicename">Korea, Republic of</column>
+            <column name="iso3">KOR</column>
+            <column name="numcode">410</column>
+            <column name="phonecode">82</column>
+        </table>
+        <table name="country">
+            <column name="id">114</column>
+            <column name="iso">KW</column>
+            <column name="name">KUWAIT</column>
+            <column name="nicename">Kuwait</column>
+            <column name="iso3">KWT</column>
+            <column name="numcode">414</column>
+            <column name="phonecode">965</column>
+        </table>
+        <table name="country">
+            <column name="id">115</column>
+            <column name="iso">KG</column>
+            <column name="name">KYRGYZSTAN</column>
+            <column name="nicename">Kyrgyzstan</column>
+            <column name="iso3">KGZ</column>
+            <column name="numcode">417</column>
+            <column name="phonecode">996</column>
+        </table>
+        <table name="country">
+            <column name="id">116</column>
+            <column name="iso">LA</column>
+            <column name="name">LAO PEOPLE'S DEMOCRATIC REPUBLIC</column>
+            <column name="nicename">Lao People's Democratic Republic</column>
+            <column name="iso3">LAO</column>
+            <column name="numcode">418</column>
+            <column name="phonecode">856</column>
+        </table>
+        <table name="country">
+            <column name="id">117</column>
+            <column name="iso">LV</column>
+            <column name="name">LATVIA</column>
+            <column name="nicename">Latvia</column>
+            <column name="iso3">LVA</column>
+            <column name="numcode">428</column>
+            <column name="phonecode">371</column>
+        </table>
+        <table name="country">
+            <column name="id">118</column>
+            <column name="iso">LB</column>
+            <column name="name">LEBANON</column>
+            <column name="nicename">Lebanon</column>
+            <column name="iso3">LBN</column>
+            <column name="numcode">422</column>
+            <column name="phonecode">961</column>
+        </table>
+        <table name="country">
+            <column name="id">119</column>
+            <column name="iso">LS</column>
+            <column name="name">LESOTHO</column>
+            <column name="nicename">Lesotho</column>
+            <column name="iso3">LSO</column>
+            <column name="numcode">426</column>
+            <column name="phonecode">266</column>
+        </table>
+        <table name="country">
+            <column name="id">120</column>
+            <column name="iso">LR</column>
+            <column name="name">LIBERIA</column>
+            <column name="nicename">Liberia</column>
+            <column name="iso3">LBR</column>
+            <column name="numcode">430</column>
+            <column name="phonecode">231</column>
+        </table>
+        <table name="country">
+            <column name="id">121</column>
+            <column name="iso">LY</column>
+            <column name="name">LIBYAN ARAB JAMAHIRIYA</column>
+            <column name="nicename">Libyan Arab Jamahiriya</column>
+            <column name="iso3">LBY</column>
+            <column name="numcode">434</column>
+            <column name="phonecode">218</column>
+        </table>
+        <table name="country">
+            <column name="id">122</column>
+            <column name="iso">LI</column>
+            <column name="name">LIECHTENSTEIN</column>
+            <column name="nicename">Liechtenstein</column>
+            <column name="iso3">LIE</column>
+            <column name="numcode">438</column>
+            <column name="phonecode">423</column>
+        </table>
+        <table name="country">
+            <column name="id">123</column>
+            <column name="iso">LT</column>
+            <column name="name">LITHUANIA</column>
+            <column name="nicename">Lithuania</column>
+            <column name="iso3">LTU</column>
+            <column name="numcode">440</column>
+            <column name="phonecode">370</column>
+        </table>
+        <table name="country">
+            <column name="id">124</column>
+            <column name="iso">LU</column>
+            <column name="name">LUXEMBOURG</column>
+            <column name="nicename">Luxembourg</column>
+            <column name="iso3">LUX</column>
+            <column name="numcode">442</column>
+            <column name="phonecode">352</column>
+        </table>
+        <table name="country">
+            <column name="id">125</column>
+            <column name="iso">MO</column>
+            <column name="name">MACAO</column>
+            <column name="nicename">Macao</column>
+            <column name="iso3">MAC</column>
+            <column name="numcode">446</column>
+            <column name="phonecode">853</column>
+        </table>
+        <table name="country">
+            <column name="id">126</column>
+            <column name="iso">MK</column>
+            <column name="name">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</column>
+            <column name="nicename">Macedonia, the Former Yugoslav Republic of</column>
+            <column name="iso3">MKD</column>
+            <column name="numcode">807</column>
+            <column name="phonecode">389</column>
+        </table>
+        <table name="country">
+            <column name="id">127</column>
+            <column name="iso">MG</column>
+            <column name="name">MADAGASCAR</column>
+            <column name="nicename">Madagascar</column>
+            <column name="iso3">MDG</column>
+            <column name="numcode">450</column>
+            <column name="phonecode">261</column>
+        </table>
+        <table name="country">
+            <column name="id">128</column>
+            <column name="iso">MW</column>
+            <column name="name">MALAWI</column>
+            <column name="nicename">Malawi</column>
+            <column name="iso3">MWI</column>
+            <column name="numcode">454</column>
+            <column name="phonecode">265</column>
+        </table>
+        <table name="country">
+            <column name="id">129</column>
+            <column name="iso">MY</column>
+            <column name="name">MALAYSIA</column>
+            <column name="nicename">Malaysia</column>
+            <column name="iso3">MYS</column>
+            <column name="numcode">458</column>
+            <column name="phonecode">60</column>
+        </table>
+        <table name="country">
+            <column name="id">130</column>
+            <column name="iso">MV</column>
+            <column name="name">MALDIVES</column>
+            <column name="nicename">Maldives</column>
+            <column name="iso3">MDV</column>
+            <column name="numcode">462</column>
+            <column name="phonecode">960</column>
+        </table>
+        <table name="country">
+            <column name="id">131</column>
+            <column name="iso">ML</column>
+            <column name="name">MALI</column>
+            <column name="nicename">Mali</column>
+            <column name="iso3">MLI</column>
+            <column name="numcode">466</column>
+            <column name="phonecode">223</column>
+        </table>
+        <table name="country">
+            <column name="id">132</column>
+            <column name="iso">MT</column>
+            <column name="name">MALTA</column>
+            <column name="nicename">Malta</column>
+            <column name="iso3">MLT</column>
+            <column name="numcode">470</column>
+            <column name="phonecode">356</column>
+        </table>
+        <table name="country">
+            <column name="id">133</column>
+            <column name="iso">MH</column>
+            <column name="name">MARSHALL ISLANDS</column>
+            <column name="nicename">Marshall Islands</column>
+            <column name="iso3">MHL</column>
+            <column name="numcode">584</column>
+            <column name="phonecode">692</column>
+        </table>
+        <table name="country">
+            <column name="id">134</column>
+            <column name="iso">MQ</column>
+            <column name="name">MARTINIQUE</column>
+            <column name="nicename">Martinique</column>
+            <column name="iso3">MTQ</column>
+            <column name="numcode">474</column>
+            <column name="phonecode">596</column>
+        </table>
+        <table name="country">
+            <column name="id">135</column>
+            <column name="iso">MR</column>
+            <column name="name">MAURITANIA</column>
+            <column name="nicename">Mauritania</column>
+            <column name="iso3">MRT</column>
+            <column name="numcode">478</column>
+            <column name="phonecode">222</column>
+        </table>
+        <table name="country">
+            <column name="id">136</column>
+            <column name="iso">MU</column>
+            <column name="name">MAURITIUS</column>
+            <column name="nicename">Mauritius</column>
+            <column name="iso3">MUS</column>
+            <column name="numcode">480</column>
+            <column name="phonecode">230</column>
+        </table>
+        <table name="country">
+            <column name="id">137</column>
+            <column name="iso">YT</column>
+            <column name="name">MAYOTTE</column>
+            <column name="nicename">Mayotte</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">269</column>
+        </table>
+        <table name="country">
+            <column name="id">138</column>
+            <column name="iso">MX</column>
+            <column name="name">MEXICO</column>
+            <column name="nicename">Mexico</column>
+            <column name="iso3">MEX</column>
+            <column name="numcode">484</column>
+            <column name="phonecode">52</column>
+        </table>
+        <table name="country">
+            <column name="id">139</column>
+            <column name="iso">FM</column>
+            <column name="name">MICRONESIA, FEDERATED STATES OF</column>
+            <column name="nicename">Micronesia, Federated States of</column>
+            <column name="iso3">FSM</column>
+            <column name="numcode">583</column>
+            <column name="phonecode">691</column>
+        </table>
+        <table name="country">
+            <column name="id">140</column>
+            <column name="iso">MD</column>
+            <column name="name">MOLDOVA, REPUBLIC OF</column>
+            <column name="nicename">Moldova, Republic of</column>
+            <column name="iso3">MDA</column>
+            <column name="numcode">498</column>
+            <column name="phonecode">373</column>
+        </table>
+        <table name="country">
+            <column name="id">141</column>
+            <column name="iso">MC</column>
+            <column name="name">MONACO</column>
+            <column name="nicename">Monaco</column>
+            <column name="iso3">MCO</column>
+            <column name="numcode">492</column>
+            <column name="phonecode">377</column>
+        </table>
+        <table name="country">
+            <column name="id">142</column>
+            <column name="iso">MN</column>
+            <column name="name">MONGOLIA</column>
+            <column name="nicename">Mongolia</column>
+            <column name="iso3">MNG</column>
+            <column name="numcode">496</column>
+            <column name="phonecode">976</column>
+        </table>
+        <table name="country">
+            <column name="id">143</column>
+            <column name="iso">MS</column>
+            <column name="name">MONTSERRAT</column>
+            <column name="nicename">Montserrat</column>
+            <column name="iso3">MSR</column>
+            <column name="numcode">500</column>
+            <column name="phonecode">1664</column>
+        </table>
+        <table name="country">
+            <column name="id">144</column>
+            <column name="iso">MA</column>
+            <column name="name">MOROCCO</column>
+            <column name="nicename">Morocco</column>
+            <column name="iso3">MAR</column>
+            <column name="numcode">504</column>
+            <column name="phonecode">212</column>
+        </table>
+        <table name="country">
+            <column name="id">145</column>
+            <column name="iso">MZ</column>
+            <column name="name">MOZAMBIQUE</column>
+            <column name="nicename">Mozambique</column>
+            <column name="iso3">MOZ</column>
+            <column name="numcode">508</column>
+            <column name="phonecode">258</column>
+        </table>
+        <table name="country">
+            <column name="id">146</column>
+            <column name="iso">MM</column>
+            <column name="name">MYANMAR</column>
+            <column name="nicename">Myanmar</column>
+            <column name="iso3">MMR</column>
+            <column name="numcode">104</column>
+            <column name="phonecode">95</column>
+        </table>
+        <table name="country">
+            <column name="id">147</column>
+            <column name="iso">NA</column>
+            <column name="name">NAMIBIA</column>
+            <column name="nicename">Namibia</column>
+            <column name="iso3">NAM</column>
+            <column name="numcode">516</column>
+            <column name="phonecode">264</column>
+        </table>
+        <table name="country">
+            <column name="id">148</column>
+            <column name="iso">NR</column>
+            <column name="name">NAURU</column>
+            <column name="nicename">Nauru</column>
+            <column name="iso3">NRU</column>
+            <column name="numcode">520</column>
+            <column name="phonecode">674</column>
+        </table>
+        <table name="country">
+            <column name="id">149</column>
+            <column name="iso">NP</column>
+            <column name="name">NEPAL</column>
+            <column name="nicename">Nepal</column>
+            <column name="iso3">NPL</column>
+            <column name="numcode">524</column>
+            <column name="phonecode">977</column>
+        </table>
+        <table name="country">
+            <column name="id">150</column>
+            <column name="iso">NL</column>
+            <column name="name">NETHERLANDS</column>
+            <column name="nicename">Netherlands</column>
+            <column name="iso3">NLD</column>
+            <column name="numcode">528</column>
+            <column name="phonecode">31</column>
+        </table>
+        <table name="country">
+            <column name="id">151</column>
+            <column name="iso">AN</column>
+            <column name="name">NETHERLANDS ANTILLES</column>
+            <column name="nicename">Netherlands Antilles</column>
+            <column name="iso3">ANT</column>
+            <column name="numcode">530</column>
+            <column name="phonecode">599</column>
+        </table>
+        <table name="country">
+            <column name="id">152</column>
+            <column name="iso">NC</column>
+            <column name="name">NEW CALEDONIA</column>
+            <column name="nicename">New Caledonia</column>
+            <column name="iso3">NCL</column>
+            <column name="numcode">540</column>
+            <column name="phonecode">687</column>
+        </table>
+        <table name="country">
+            <column name="id">153</column>
+            <column name="iso">NZ</column>
+            <column name="name">NEW ZEALAND</column>
+            <column name="nicename">New Zealand</column>
+            <column name="iso3">NZL</column>
+            <column name="numcode">554</column>
+            <column name="phonecode">64</column>
+        </table>
+        <table name="country">
+            <column name="id">154</column>
+            <column name="iso">NI</column>
+            <column name="name">NICARAGUA</column>
+            <column name="nicename">Nicaragua</column>
+            <column name="iso3">NIC</column>
+            <column name="numcode">558</column>
+            <column name="phonecode">505</column>
+        </table>
+        <table name="country">
+            <column name="id">155</column>
+            <column name="iso">NE</column>
+            <column name="name">NIGER</column>
+            <column name="nicename">Niger</column>
+            <column name="iso3">NER</column>
+            <column name="numcode">562</column>
+            <column name="phonecode">227</column>
+        </table>
+        <table name="country">
+            <column name="id">156</column>
+            <column name="iso">NG</column>
+            <column name="name">NIGERIA</column>
+            <column name="nicename">Nigeria</column>
+            <column name="iso3">NGA</column>
+            <column name="numcode">566</column>
+            <column name="phonecode">234</column>
+        </table>
+        <table name="country">
+            <column name="id">157</column>
+            <column name="iso">NU</column>
+            <column name="name">NIUE</column>
+            <column name="nicename">Niue</column>
+            <column name="iso3">NIU</column>
+            <column name="numcode">570</column>
+            <column name="phonecode">683</column>
+        </table>
+        <table name="country">
+            <column name="id">158</column>
+            <column name="iso">NF</column>
+            <column name="name">NORFOLK ISLAND</column>
+            <column name="nicename">Norfolk Island</column>
+            <column name="iso3">NFK</column>
+            <column name="numcode">574</column>
+            <column name="phonecode">672</column>
+        </table>
+        <table name="country">
+            <column name="id">159</column>
+            <column name="iso">MP</column>
+            <column name="name">NORTHERN MARIANA ISLANDS</column>
+            <column name="nicename">Northern Mariana Islands</column>
+            <column name="iso3">MNP</column>
+            <column name="numcode">580</column>
+            <column name="phonecode">1670</column>
+        </table>
+        <table name="country">
+            <column name="id">160</column>
+            <column name="iso">NO</column>
+            <column name="name">NORWAY</column>
+            <column name="nicename">Norway</column>
+            <column name="iso3">NOR</column>
+            <column name="numcode">578</column>
+            <column name="phonecode">47</column>
+        </table>
+        <table name="country">
+            <column name="id">161</column>
+            <column name="iso">OM</column>
+            <column name="name">OMAN</column>
+            <column name="nicename">Oman</column>
+            <column name="iso3">OMN</column>
+            <column name="numcode">512</column>
+            <column name="phonecode">968</column>
+        </table>
+        <table name="country">
+            <column name="id">162</column>
+            <column name="iso">PK</column>
+            <column name="name">PAKISTAN</column>
+            <column name="nicename">Pakistan</column>
+            <column name="iso3">PAK</column>
+            <column name="numcode">586</column>
+            <column name="phonecode">92</column>
+        </table>
+        <table name="country">
+            <column name="id">163</column>
+            <column name="iso">PW</column>
+            <column name="name">PALAU</column>
+            <column name="nicename">Palau</column>
+            <column name="iso3">PLW</column>
+            <column name="numcode">585</column>
+            <column name="phonecode">680</column>
+        </table>
+        <table name="country">
+            <column name="id">164</column>
+            <column name="iso">PS</column>
+            <column name="name">PALESTINIAN TERRITORY, OCCUPIED</column>
+            <column name="nicename">Palestinian Territory, Occupied</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">970</column>
+        </table>
+        <table name="country">
+            <column name="id">165</column>
+            <column name="iso">PA</column>
+            <column name="name">PANAMA</column>
+            <column name="nicename">Panama</column>
+            <column name="iso3">PAN</column>
+            <column name="numcode">591</column>
+            <column name="phonecode">507</column>
+        </table>
+        <table name="country">
+            <column name="id">166</column>
+            <column name="iso">PG</column>
+            <column name="name">PAPUA NEW GUINEA</column>
+            <column name="nicename">Papua New Guinea</column>
+            <column name="iso3">PNG</column>
+            <column name="numcode">598</column>
+            <column name="phonecode">675</column>
+        </table>
+        <table name="country">
+            <column name="id">167</column>
+            <column name="iso">PY</column>
+            <column name="name">PARAGUAY</column>
+            <column name="nicename">Paraguay</column>
+            <column name="iso3">PRY</column>
+            <column name="numcode">600</column>
+            <column name="phonecode">595</column>
+        </table>
+        <table name="country">
+            <column name="id">168</column>
+            <column name="iso">PE</column>
+            <column name="name">PERU</column>
+            <column name="nicename">Peru</column>
+            <column name="iso3">PER</column>
+            <column name="numcode">604</column>
+            <column name="phonecode">51</column>
+        </table>
+        <table name="country">
+            <column name="id">169</column>
+            <column name="iso">PH</column>
+            <column name="name">PHILIPPINES</column>
+            <column name="nicename">Philippines</column>
+            <column name="iso3">PHL</column>
+            <column name="numcode">608</column>
+            <column name="phonecode">63</column>
+        </table>
+        <table name="country">
+            <column name="id">170</column>
+            <column name="iso">PN</column>
+            <column name="name">PITCAIRN</column>
+            <column name="nicename">Pitcairn</column>
+            <column name="iso3">PCN</column>
+            <column name="numcode">612</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">171</column>
+            <column name="iso">PL</column>
+            <column name="name">POLAND</column>
+            <column name="nicename">Poland</column>
+            <column name="iso3">POL</column>
+            <column name="numcode">616</column>
+            <column name="phonecode">48</column>
+        </table>
+        <table name="country">
+            <column name="id">172</column>
+            <column name="iso">PT</column>
+            <column name="name">PORTUGAL</column>
+            <column name="nicename">Portugal</column>
+            <column name="iso3">PRT</column>
+            <column name="numcode">620</column>
+            <column name="phonecode">351</column>
+        </table>
+        <table name="country">
+            <column name="id">173</column>
+            <column name="iso">PR</column>
+            <column name="name">PUERTO RICO</column>
+            <column name="nicename">Puerto Rico</column>
+            <column name="iso3">PRI</column>
+            <column name="numcode">630</column>
+            <column name="phonecode">1787</column>
+        </table>
+        <table name="country">
+            <column name="id">174</column>
+            <column name="iso">QA</column>
+            <column name="name">QATAR</column>
+            <column name="nicename">Qatar</column>
+            <column name="iso3">QAT</column>
+            <column name="numcode">634</column>
+            <column name="phonecode">974</column>
+        </table>
+        <table name="country">
+            <column name="id">175</column>
+            <column name="iso">RE</column>
+            <column name="name">REUNION</column>
+            <column name="nicename">Reunion</column>
+            <column name="iso3">REU</column>
+            <column name="numcode">638</column>
+            <column name="phonecode">262</column>
+        </table>
+        <table name="country">
+            <column name="id">176</column>
+            <column name="iso">RO</column>
+            <column name="name">ROMANIA</column>
+            <column name="nicename">Romania</column>
+            <column name="iso3">ROM</column>
+            <column name="numcode">642</column>
+            <column name="phonecode">40</column>
+        </table>
+        <table name="country">
+            <column name="id">177</column>
+            <column name="iso">RU</column>
+            <column name="name">RUSSIAN FEDERATION</column>
+            <column name="nicename">Russian Federation</column>
+            <column name="iso3">RUS</column>
+            <column name="numcode">643</column>
+            <column name="phonecode">7</column>
+        </table>
+        <table name="country">
+            <column name="id">178</column>
+            <column name="iso">RW</column>
+            <column name="name">RWANDA</column>
+            <column name="nicename">Rwanda</column>
+            <column name="iso3">RWA</column>
+            <column name="numcode">646</column>
+            <column name="phonecode">250</column>
+        </table>
+        <table name="country">
+            <column name="id">179</column>
+            <column name="iso">SH</column>
+            <column name="name">SAINT HELENA</column>
+            <column name="nicename">Saint Helena</column>
+            <column name="iso3">SHN</column>
+            <column name="numcode">654</column>
+            <column name="phonecode">290</column>
+        </table>
+        <table name="country">
+            <column name="id">180</column>
+            <column name="iso">KN</column>
+            <column name="name">SAINT KITTS AND NEVIS</column>
+            <column name="nicename">Saint Kitts and Nevis</column>
+            <column name="iso3">KNA</column>
+            <column name="numcode">659</column>
+            <column name="phonecode">1869</column>
+        </table>
+        <table name="country">
+            <column name="id">181</column>
+            <column name="iso">LC</column>
+            <column name="name">SAINT LUCIA</column>
+            <column name="nicename">Saint Lucia</column>
+            <column name="iso3">LCA</column>
+            <column name="numcode">662</column>
+            <column name="phonecode">1758</column>
+        </table>
+        <table name="country">
+            <column name="id">182</column>
+            <column name="iso">PM</column>
+            <column name="name">SAINT PIERRE AND MIQUELON</column>
+            <column name="nicename">Saint Pierre and Miquelon</column>
+            <column name="iso3">SPM</column>
+            <column name="numcode">666</column>
+            <column name="phonecode">508</column>
+        </table>
+        <table name="country">
+            <column name="id">183</column>
+            <column name="iso">VC</column>
+            <column name="name">SAINT VINCENT AND THE GRENADINES</column>
+            <column name="nicename">Saint Vincent and the Grenadines</column>
+            <column name="iso3">VCT</column>
+            <column name="numcode">670</column>
+            <column name="phonecode">1784</column>
+        </table>
+        <table name="country">
+            <column name="id">184</column>
+            <column name="iso">WS</column>
+            <column name="name">SAMOA</column>
+            <column name="nicename">Samoa</column>
+            <column name="iso3">WSM</column>
+            <column name="numcode">882</column>
+            <column name="phonecode">684</column>
+        </table>
+        <table name="country">
+            <column name="id">185</column>
+            <column name="iso">SM</column>
+            <column name="name">SAN MARINO</column>
+            <column name="nicename">San Marino</column>
+            <column name="iso3">SMR</column>
+            <column name="numcode">674</column>
+            <column name="phonecode">378</column>
+        </table>
+        <table name="country">
+            <column name="id">186</column>
+            <column name="iso">ST</column>
+            <column name="name">SAO TOME AND PRINCIPE</column>
+            <column name="nicename">Sao Tome and Principe</column>
+            <column name="iso3">STP</column>
+            <column name="numcode">678</column>
+            <column name="phonecode">239</column>
+        </table>
+        <table name="country">
+            <column name="id">187</column>
+            <column name="iso">SA</column>
+            <column name="name">SAUDI ARABIA</column>
+            <column name="nicename">Saudi Arabia</column>
+            <column name="iso3">SAU</column>
+            <column name="numcode">682</column>
+            <column name="phonecode">966</column>
+        </table>
+        <table name="country">
+            <column name="id">188</column>
+            <column name="iso">SN</column>
+            <column name="name">SENEGAL</column>
+            <column name="nicename">Senegal</column>
+            <column name="iso3">SEN</column>
+            <column name="numcode">686</column>
+            <column name="phonecode">221</column>
+        </table>
+        <table name="country">
+            <column name="id">189</column>
+            <column name="iso">CS</column>
+            <column name="name">SERBIA AND MONTENEGRO</column>
+            <column name="nicename">Serbia and Montenegro</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">381</column>
+        </table>
+        <table name="country">
+            <column name="id">190</column>
+            <column name="iso">SC</column>
+            <column name="name">SEYCHELLES</column>
+            <column name="nicename">Seychelles</column>
+            <column name="iso3">SYC</column>
+            <column name="numcode">690</column>
+            <column name="phonecode">248</column>
+        </table>
+        <table name="country">
+            <column name="id">191</column>
+            <column name="iso">SL</column>
+            <column name="name">SIERRA LEONE</column>
+            <column name="nicename">Sierra Leone</column>
+            <column name="iso3">SLE</column>
+            <column name="numcode">694</column>
+            <column name="phonecode">232</column>
+        </table>
+        <table name="country">
+            <column name="id">192</column>
+            <column name="iso">SG</column>
+            <column name="name">SINGAPORE</column>
+            <column name="nicename">Singapore</column>
+            <column name="iso3">SGP</column>
+            <column name="numcode">702</column>
+            <column name="phonecode">65</column>
+        </table>
+        <table name="country">
+            <column name="id">193</column>
+            <column name="iso">SK</column>
+            <column name="name">SLOVAKIA</column>
+            <column name="nicename">Slovakia</column>
+            <column name="iso3">SVK</column>
+            <column name="numcode">703</column>
+            <column name="phonecode">421</column>
+        </table>
+        <table name="country">
+            <column name="id">194</column>
+            <column name="iso">SI</column>
+            <column name="name">SLOVENIA</column>
+            <column name="nicename">Slovenia</column>
+            <column name="iso3">SVN</column>
+            <column name="numcode">705</column>
+            <column name="phonecode">386</column>
+        </table>
+        <table name="country">
+            <column name="id">195</column>
+            <column name="iso">SB</column>
+            <column name="name">SOLOMON ISLANDS</column>
+            <column name="nicename">Solomon Islands</column>
+            <column name="iso3">SLB</column>
+            <column name="numcode">90</column>
+            <column name="phonecode">677</column>
+        </table>
+        <table name="country">
+            <column name="id">196</column>
+            <column name="iso">SO</column>
+            <column name="name">SOMALIA</column>
+            <column name="nicename">Somalia</column>
+            <column name="iso3">SOM</column>
+            <column name="numcode">706</column>
+            <column name="phonecode">252</column>
+        </table>
+        <table name="country">
+            <column name="id">197</column>
+            <column name="iso">ZA</column>
+            <column name="name">SOUTH AFRICA</column>
+            <column name="nicename">South Africa</column>
+            <column name="iso3">ZAF</column>
+            <column name="numcode">710</column>
+            <column name="phonecode">27</column>
+        </table>
+        <table name="country">
+            <column name="id">198</column>
+            <column name="iso">GS</column>
+            <column name="name">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</column>
+            <column name="nicename">South Georgia and the South Sandwich Islands</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">199</column>
+            <column name="iso">ES</column>
+            <column name="name">SPAIN</column>
+            <column name="nicename">Spain</column>
+            <column name="iso3">ESP</column>
+            <column name="numcode">724</column>
+            <column name="phonecode">34</column>
+        </table>
+        <table name="country">
+            <column name="id">200</column>
+            <column name="iso">LK</column>
+            <column name="name">SRI LANKA</column>
+            <column name="nicename">Sri Lanka</column>
+            <column name="iso3">LKA</column>
+            <column name="numcode">144</column>
+            <column name="phonecode">94</column>
+        </table>
+        <table name="country">
+            <column name="id">201</column>
+            <column name="iso">SD</column>
+            <column name="name">SUDAN</column>
+            <column name="nicename">Sudan</column>
+            <column name="iso3">SDN</column>
+            <column name="numcode">736</column>
+            <column name="phonecode">249</column>
+        </table>
+        <table name="country">
+            <column name="id">202</column>
+            <column name="iso">SR</column>
+            <column name="name">SURINAME</column>
+            <column name="nicename">Suriname</column>
+            <column name="iso3">SUR</column>
+            <column name="numcode">740</column>
+            <column name="phonecode">597</column>
+        </table>
+        <table name="country">
+            <column name="id">203</column>
+            <column name="iso">SJ</column>
+            <column name="name">SVALBARD AND JAN MAYEN</column>
+            <column name="nicename">Svalbard and Jan Mayen</column>
+            <column name="iso3">SJM</column>
+            <column name="numcode">744</column>
+            <column name="phonecode">47</column>
+        </table>
+        <table name="country">
+            <column name="id">204</column>
+            <column name="iso">SZ</column>
+            <column name="name">SWAZILAND</column>
+            <column name="nicename">Swaziland</column>
+            <column name="iso3">SWZ</column>
+            <column name="numcode">748</column>
+            <column name="phonecode">268</column>
+        </table>
+        <table name="country">
+            <column name="id">205</column>
+            <column name="iso">SE</column>
+            <column name="name">SWEDEN</column>
+            <column name="nicename">Sweden</column>
+            <column name="iso3">SWE</column>
+            <column name="numcode">752</column>
+            <column name="phonecode">46</column>
+        </table>
+        <table name="country">
+            <column name="id">206</column>
+            <column name="iso">CH</column>
+            <column name="name">SWITZERLAND</column>
+            <column name="nicename">Switzerland</column>
+            <column name="iso3">CHE</column>
+            <column name="numcode">756</column>
+            <column name="phonecode">41</column>
+        </table>
+        <table name="country">
+            <column name="id">207</column>
+            <column name="iso">SY</column>
+            <column name="name">SYRIAN ARAB REPUBLIC</column>
+            <column name="nicename">Syrian Arab Republic</column>
+            <column name="iso3">SYR</column>
+            <column name="numcode">760</column>
+            <column name="phonecode">963</column>
+        </table>
+        <table name="country">
+            <column name="id">208</column>
+            <column name="iso">TW</column>
+            <column name="name">TAIWAN, PROVINCE OF CHINA</column>
+            <column name="nicename">Taiwan, Province of China</column>
+            <column name="iso3">TWN</column>
+            <column name="numcode">158</column>
+            <column name="phonecode">886</column>
+        </table>
+        <table name="country">
+            <column name="id">209</column>
+            <column name="iso">TJ</column>
+            <column name="name">TAJIKISTAN</column>
+            <column name="nicename">Tajikistan</column>
+            <column name="iso3">TJK</column>
+            <column name="numcode">762</column>
+            <column name="phonecode">992</column>
+        </table>
+        <table name="country">
+            <column name="id">210</column>
+            <column name="iso">TZ</column>
+            <column name="name">TANZANIA, UNITED REPUBLIC OF</column>
+            <column name="nicename">Tanzania, United Republic of</column>
+            <column name="iso3">TZA</column>
+            <column name="numcode">834</column>
+            <column name="phonecode">255</column>
+        </table>
+        <table name="country">
+            <column name="id">211</column>
+            <column name="iso">TH</column>
+            <column name="name">THAILAND</column>
+            <column name="nicename">Thailand</column>
+            <column name="iso3">THA</column>
+            <column name="numcode">764</column>
+            <column name="phonecode">66</column>
+        </table>
+        <table name="country">
+            <column name="id">212</column>
+            <column name="iso">TL</column>
+            <column name="name">TIMOR-LESTE</column>
+            <column name="nicename">Timor-Leste</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">670</column>
+        </table>
+        <table name="country">
+            <column name="id">213</column>
+            <column name="iso">TG</column>
+            <column name="name">TOGO</column>
+            <column name="nicename">Togo</column>
+            <column name="iso3">TGO</column>
+            <column name="numcode">768</column>
+            <column name="phonecode">228</column>
+        </table>
+        <table name="country">
+            <column name="id">214</column>
+            <column name="iso">TK</column>
+            <column name="name">TOKELAU</column>
+            <column name="nicename">Tokelau</column>
+            <column name="iso3">TKL</column>
+            <column name="numcode">772</column>
+            <column name="phonecode">690</column>
+        </table>
+        <table name="country">
+            <column name="id">215</column>
+            <column name="iso">TO</column>
+            <column name="name">TONGA</column>
+            <column name="nicename">Tonga</column>
+            <column name="iso3">TON</column>
+            <column name="numcode">776</column>
+            <column name="phonecode">676</column>
+        </table>
+        <table name="country">
+            <column name="id">216</column>
+            <column name="iso">TT</column>
+            <column name="name">TRINIDAD AND TOBAGO</column>
+            <column name="nicename">Trinidad and Tobago</column>
+            <column name="iso3">TTO</column>
+            <column name="numcode">780</column>
+            <column name="phonecode">1868</column>
+        </table>
+        <table name="country">
+            <column name="id">217</column>
+            <column name="iso">TN</column>
+            <column name="name">TUNISIA</column>
+            <column name="nicename">Tunisia</column>
+            <column name="iso3">TUN</column>
+            <column name="numcode">788</column>
+            <column name="phonecode">216</column>
+        </table>
+        <table name="country">
+            <column name="id">218</column>
+            <column name="iso">TR</column>
+            <column name="name">TURKEY</column>
+            <column name="nicename">Turkey</column>
+            <column name="iso3">TUR</column>
+            <column name="numcode">792</column>
+            <column name="phonecode">90</column>
+        </table>
+        <table name="country">
+            <column name="id">219</column>
+            <column name="iso">TM</column>
+            <column name="name">TURKMENISTAN</column>
+            <column name="nicename">Turkmenistan</column>
+            <column name="iso3">TKM</column>
+            <column name="numcode">795</column>
+            <column name="phonecode">7370</column>
+        </table>
+        <table name="country">
+            <column name="id">220</column>
+            <column name="iso">TC</column>
+            <column name="name">TURKS AND CAICOS ISLANDS</column>
+            <column name="nicename">Turks and Caicos Islands</column>
+            <column name="iso3">TCA</column>
+            <column name="numcode">796</column>
+            <column name="phonecode">1649</column>
+        </table>
+        <table name="country">
+            <column name="id">221</column>
+            <column name="iso">TV</column>
+            <column name="name">TUVALU</column>
+            <column name="nicename">Tuvalu</column>
+            <column name="iso3">TUV</column>
+            <column name="numcode">798</column>
+            <column name="phonecode">688</column>
+        </table>
+        <table name="country">
+            <column name="id">222</column>
+            <column name="iso">UG</column>
+            <column name="name">UGANDA</column>
+            <column name="nicename">Uganda</column>
+            <column name="iso3">UGA</column>
+            <column name="numcode">800</column>
+            <column name="phonecode">256</column>
+        </table>
+        <table name="country">
+            <column name="id">223</column>
+            <column name="iso">UA</column>
+            <column name="name">UKRAINE</column>
+            <column name="nicename">Ukraine</column>
+            <column name="iso3">UKR</column>
+            <column name="numcode">804</column>
+            <column name="phonecode">380</column>
+        </table>
+        <table name="country">
+            <column name="id">224</column>
+            <column name="iso">AE</column>
+            <column name="name">UNITED ARAB EMIRATES</column>
+            <column name="nicename">United Arab Emirates</column>
+            <column name="iso3">ARE</column>
+            <column name="numcode">784</column>
+            <column name="phonecode">971</column>
+        </table>
+        <table name="country">
+            <column name="id">225</column>
+            <column name="iso">GB</column>
+            <column name="name">UNITED KINGDOM</column>
+            <column name="nicename">United Kingdom</column>
+            <column name="iso3">GBR</column>
+            <column name="numcode">826</column>
+            <column name="phonecode">44</column>
+        </table>
+        <table name="country">
+            <column name="id">226</column>
+            <column name="iso">US</column>
+            <column name="name">UNITED STATES</column>
+            <column name="nicename">United States</column>
+            <column name="iso3">USA</column>
+            <column name="numcode">840</column>
+            <column name="phonecode">1</column>
+        </table>
+        <table name="country">
+            <column name="id">227</column>
+            <column name="iso">UM</column>
+            <column name="name">UNITED STATES MINOR OUTLYING ISLANDS</column>
+            <column name="nicename">United States Minor Outlying Islands</column>
+            <column name="iso3">NULL</column>
+            <column name="numcode">NULL</column>
+            <column name="phonecode">1</column>
+        </table>
+        <table name="country">
+            <column name="id">228</column>
+            <column name="iso">UY</column>
+            <column name="name">URUGUAY</column>
+            <column name="nicename">Uruguay</column>
+            <column name="iso3">URY</column>
+            <column name="numcode">858</column>
+            <column name="phonecode">598</column>
+        </table>
+        <table name="country">
+            <column name="id">229</column>
+            <column name="iso">UZ</column>
+            <column name="name">UZBEKISTAN</column>
+            <column name="nicename">Uzbekistan</column>
+            <column name="iso3">UZB</column>
+            <column name="numcode">860</column>
+            <column name="phonecode">998</column>
+        </table>
+        <table name="country">
+            <column name="id">230</column>
+            <column name="iso">VU</column>
+            <column name="name">VANUATU</column>
+            <column name="nicename">Vanuatu</column>
+            <column name="iso3">VUT</column>
+            <column name="numcode">548</column>
+            <column name="phonecode">678</column>
+        </table>
+        <table name="country">
+            <column name="id">231</column>
+            <column name="iso">VE</column>
+            <column name="name">VENEZUELA</column>
+            <column name="nicename">Venezuela</column>
+            <column name="iso3">VEN</column>
+            <column name="numcode">862</column>
+            <column name="phonecode">58</column>
+        </table>
+        <table name="country">
+            <column name="id">232</column>
+            <column name="iso">VN</column>
+            <column name="name">VIET NAM</column>
+            <column name="nicename">Viet Nam</column>
+            <column name="iso3">VNM</column>
+            <column name="numcode">704</column>
+            <column name="phonecode">84</column>
+        </table>
+        <table name="country">
+            <column name="id">233</column>
+            <column name="iso">VG</column>
+            <column name="name">VIRGIN ISLANDS, BRITISH</column>
+            <column name="nicename">Virgin Islands, British</column>
+            <column name="iso3">VGB</column>
+            <column name="numcode">92</column>
+            <column name="phonecode">1284</column>
+        </table>
+        <table name="country">
+            <column name="id">234</column>
+            <column name="iso">VI</column>
+            <column name="name">VIRGIN ISLANDS, U.S.</column>
+            <column name="nicename">Virgin Islands, U.s.</column>
+            <column name="iso3">VIR</column>
+            <column name="numcode">850</column>
+            <column name="phonecode">1340</column>
+        </table>
+        <table name="country">
+            <column name="id">235</column>
+            <column name="iso">WF</column>
+            <column name="name">WALLIS AND FUTUNA</column>
+            <column name="nicename">Wallis and Futuna</column>
+            <column name="iso3">WLF</column>
+            <column name="numcode">876</column>
+            <column name="phonecode">681</column>
+        </table>
+        <table name="country">
+            <column name="id">236</column>
+            <column name="iso">EH</column>
+            <column name="name">WESTERN SAHARA</column>
+            <column name="nicename">Western Sahara</column>
+            <column name="iso3">ESH</column>
+            <column name="numcode">732</column>
+            <column name="phonecode">212</column>
+        </table>
+        <table name="country">
+            <column name="id">237</column>
+            <column name="iso">YE</column>
+            <column name="name">YEMEN</column>
+            <column name="nicename">Yemen</column>
+            <column name="iso3">YEM</column>
+            <column name="numcode">887</column>
+            <column name="phonecode">967</column>
+        </table>
+        <table name="country">
+            <column name="id">238</column>
+            <column name="iso">ZM</column>
+            <column name="name">ZAMBIA</column>
+            <column name="nicename">Zambia</column>
+            <column name="iso3">ZMB</column>
+            <column name="numcode">894</column>
+            <column name="phonecode">260</column>
+        </table>
+        <table name="country">
+            <column name="id">239</column>
+            <column name="iso">ZW</column>
+            <column name="name">ZIMBABWE</column>
+            <column name="nicename">Zimbabwe</column>
+            <column name="iso3">ZWE</column>
+            <column name="numcode">716</column>
+            <column name="phonecode">263</column>
+        </table>
+        <table name="country">
+            <column name="id">240</column>
+            <column name="iso">RS</column>
+            <column name="name">SERBIA</column>
+            <column name="nicename">Serbia</column>
+            <column name="iso3">SRB</column>
+            <column name="numcode">688</column>
+            <column name="phonecode">381</column>
+        </table>
+        <table name="country">
+            <column name="id">241</column>
+            <column name="iso">AP</column>
+            <column name="name">ASIA PACIFIC REGION</column>
+            <column name="nicename">Asia / Pacific Region</column>
+            <column name="iso3">0</column>
+            <column name="numcode">0</column>
+            <column name="phonecode">0</column>
+        </table>
+        <table name="country">
+            <column name="id">242</column>
+            <column name="iso">ME</column>
+            <column name="name">MONTENEGRO</column>
+            <column name="nicename">Montenegro</column>
+            <column name="iso3">MNE</column>
+            <column name="numcode">499</column>
+            <column name="phonecode">382</column>
+        </table>
+        <table name="country">
+            <column name="id">243</column>
+            <column name="iso">AX</column>
+            <column name="name">ALAND ISLANDS</column>
+            <column name="nicename">Aland Islands</column>
+            <column name="iso3">ALA</column>
+            <column name="numcode">248</column>
+            <column name="phonecode">358</column>
+        </table>
+        <table name="country">
+            <column name="id">244</column>
+            <column name="iso">BQ</column>
+            <column name="name">BONAIRE, SINT EUSTATIUS AND SABA</column>
+            <column name="nicename">Bonaire, Sint Eustatius and Saba</column>
+            <column name="iso3">BES</column>
+            <column name="numcode">535</column>
+            <column name="phonecode">599</column>
+        </table>
+        <table name="country">
+            <column name="id">245</column>
+            <column name="iso">CW</column>
+            <column name="name">CURACAO</column>
+            <column name="nicename">Curacao</column>
+            <column name="iso3">CUW</column>
+            <column name="numcode">531</column>
+            <column name="phonecode">599</column>
+        </table>
+        <table name="country">
+            <column name="id">246</column>
+            <column name="iso">GG</column>
+            <column name="name">GUERNSEY</column>
+            <column name="nicename">Guernsey</column>
+            <column name="iso3">GGY</column>
+            <column name="numcode">831</column>
+            <column name="phonecode">44</column>
+        </table>
+        <table name="country">
+            <column name="id">247</column>
+            <column name="iso">IM</column>
+            <column name="name">ISLE OF MAN</column>
+            <column name="nicename">Isle of Man</column>
+            <column name="iso3">IMN</column>
+            <column name="numcode">833</column>
+            <column name="phonecode">44</column>
+        </table>
+        <table name="country">
+            <column name="id">248</column>
+            <column name="iso">JE</column>
+            <column name="name">JERSEY</column>
+            <column name="nicename">Jersey</column>
+            <column name="iso3">JEY</column>
+            <column name="numcode">832</column>
+            <column name="phonecode">44</column>
+        </table>
+        <table name="country">
+            <column name="id">249</column>
+            <column name="iso">XK</column>
+            <column name="name">KOSOVO</column>
+            <column name="nicename">Kosovo</column>
+            <column name="iso3">---</column>
+            <column name="numcode">0</column>
+            <column name="phonecode">381</column>
+        </table>
+        <table name="country">
+            <column name="id">250</column>
+            <column name="iso">BL</column>
+            <column name="name">SAINT BARTHELEMY</column>
+            <column name="nicename">Saint Barthelemy</column>
+            <column name="iso3">BLM</column>
+            <column name="numcode">652</column>
+            <column name="phonecode">590</column>
+        </table>
+        <table name="country">
+            <column name="id">251</column>
+            <column name="iso">MF</column>
+            <column name="name">SAINT MARTIN</column>
+            <column name="nicename">Saint Martin</column>
+            <column name="iso3">MAF</column>
+            <column name="numcode">663</column>
+            <column name="phonecode">590</column>
+        </table>
+        <table name="country">
+            <column name="id">252</column>
+            <column name="iso">SX</column>
+            <column name="name">SINT MAARTEN</column>
+            <column name="nicename">Sint Maarten</column>
+            <column name="iso3">SXM</column>
+            <column name="numcode">534</column>
+            <column name="phonecode">1</column>
+        </table>
+        <table name="country">
+            <column name="id">253</column>
+            <column name="iso">SS</column>
+            <column name="name">SOUTH SUDAN</column>
+            <column name="nicename">South Sudan</column>
+            <column name="iso3">SSD</column>
+            <column name="numcode">728</column>
+            <column name="phonecode">211</column>
+        </table>
+        <table name="country">
+            <column name="id">254</column>
+            <column name="iso">RS</column>
+            <column name="name">SERBIA</column>
+            <column name="nicename">Serbia</column>
+            <column name="iso3">SRB</column>
+            <column name="numcode">688</column>
+            <column name="phonecode">381</column>
+        </table>
+    </database>
+</pma_xml_export>
